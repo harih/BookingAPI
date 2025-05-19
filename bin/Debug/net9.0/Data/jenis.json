@@ -1,0 +1,10 @@
+[
+    { "Id": "MP", "Name": "Makan Pagi", "Budget": 25000 },
+    { "Id": "SP", "Name": "Snack Pagi", "Budget": 15000 },
+    { "Id": "MS", "Name": "Makan Siang", "Budget": 35000 },
+    { "Id": "SS", "Name": "Snack Siang", "Budget": 15000 },
+    { "Id": "ME", "Name": "Makan Sore", "Budget": 30000 },
+    { "Id": "SE", "Name": "Snack Sore", "Budget": 15000 },
+    { "Id": "MM", "Name": "Makan Malam", "Budget": 50000 },
+    { "Id": "SM", "Name": "Snack Malam", "Budget": 25000 }
+]

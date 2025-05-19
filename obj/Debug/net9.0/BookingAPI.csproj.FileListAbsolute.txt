@@ -156,3 +156,5 @@ C:\Users\harih\source\BookingAPI\obj\Debug\net9.0\BookingAPI.pdb
 C:\Users\harih\source\BookingAPI\obj\Debug\net9.0\BookingAPI.genruntimeconfig.cache
 C:\Users\harih\source\BookingAPI\obj\Debug\net9.0\ref\BookingAPI.dll
 C:\Users\harih\source\BookingAPI\bin\Debug\net9.0\Data\rooms.json
+C:\Users\harih\source\BookingAPI\obj\Debug\net9.0\BookingAPI.sourcelink.json
+C:\Users\harih\source\BookingAPI\bin\Debug\net9.0\Data\jenis.json

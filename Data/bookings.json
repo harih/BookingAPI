@@ -11,5 +11,7 @@
     { "Id": 11, "Room": "Conference Room", "Department": "GA", "Date": "2025-05-14 09:00", "EndDate": "2025-05-14 09:00" },
     { "Id": 12, "Room": "Meeting Room B", "Department": "Finance", "Date": "2025-05-15 13:00", "EndDate": "2025-05-15 15:00" },
     { "Id": 13, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-26 09:00", "EndDate": "2025-05-16 12:00" }, 
-    { "Id": 14, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-27 09:00", "EndDate": "2025-05-27 16:00" }
+    { "Id": 14, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-27 09:00", "EndDate": "2025-05-27 16:00" },
+    { "Id": 15, "Room": "Meeting Room A", "Department": "IT", "Date": "2025-06-02 09:00", "EndDate": "2025-06-02 16:00" },
+    { "Id": 16, "Room": "Meeting Room B", "Department": "HR", "Date": "2025-06-04 09:00", "EndDate": "2025-06-04 16:00" }
 ]

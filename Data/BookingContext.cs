@@ -2,31 +2,14 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.IO;
 
-// public class BookingContext : DbContext
-// {
-//     public DbSet<Booking> Bookings { get; set; }
-
-//     protected override void OnConfiguring(DbContextOptionsBuilder options)
-//         => options.UseSqlite("Data Source=:memory:");
-
-//     public void SeedData()
-//     {
-//         var jsonData = File.ReadAllText("Data/bookings.json");
-
-//         // Console.WriteLine("JSON DATA: " + jsonData.ToString());
-
-//         var bookings = JsonConvert.DeserializeObject<List<Booking>>(jsonData);
-//         Bookings.AddRange(bookings);
-//         SaveChanges();
-//     }
-// }
-
 
 
 public class BookingContext : DbContext
 {
     public DbSet<Booking> Bookings { get; set; }
     public DbSet<Room> Rooms { get; set; }
+    public DbSet<Jenis> Jenis { get; set; }
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options.UseSqlite("Data Source=:memory:");
@@ -42,6 +25,11 @@ public class BookingContext : DbContext
         var roomData = File.ReadAllText("Data/rooms.json");
         var rooms = JsonConvert.DeserializeObject<List<Room>>(roomData);
         Rooms.AddRange(rooms);
+
+        // Seed Jenis
+        var jenisData = File.ReadAllText("Data/jenis.json");
+        var jenis = JsonConvert.DeserializeObject<List<Jenis>>(jenisData);
+        Jenis.AddRange(jenis);
 
         SaveChanges();
     }

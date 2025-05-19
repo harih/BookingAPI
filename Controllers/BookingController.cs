@@ -20,19 +20,6 @@ public class BookingController : ControllerBase
     public IActionResult GetBookingList() => Ok(_context.Bookings.ToList());
 
 
-    // [HttpGet("getBookingFilter/{year}/{month}/{dept?}")]
-    // public IActionResult GetBookingFilter(int year, int month, string? dept = null)
-    // {
-    //     var filteredBookings = _context.Bookings
-    //         .Where(b => b.Date.Year == year && b.Date.Month == month);
-
-    //     if (!string.IsNullOrEmpty(dept))
-    //     {
-    //         filteredBookings = filteredBookings.Where(b => b.Department == dept);
-    //     }
-
-    //     return Ok(filteredBookings.ToList());
-    // }
 
     [HttpGet("getBookingFilter/{year}/{month?}/{dept?}")]
     public IActionResult GetBookingFilter(int year, int? month = null, string? dept = null)
@@ -64,16 +51,40 @@ public class BookingController : ControllerBase
         return Ok(summary);
     }
 
-    [HttpGet("getBookingByDate")]
-    public IActionResult GetBookingByDate()
+    // [HttpGet("getBookingByDate")]
+    // public IActionResult GetBookingByDate()
+    // {
+    //     var summary = _context.Bookings
+    //         .GroupBy(b => new { DateOnly = DateOnly.FromDateTime(b.Date), b.Room, b.Department }) // Converts DateTime to DateOnly
+    //         .Select(g => new { Date = g.Key.DateOnly, Room = g.Key.Room, Department = g.Key.Department, Count = g.Count() })
+    //         .OrderBy(g => g.Date)
+    //         .ToList();
+
+    //     return Ok(summary);
+    // }
+
+
+    [HttpGet("getBookingByDate/{year?}/{month?}")]
+    public IActionResult GetBookingByDate(int? year = null, int? month = null)
     {
-        var summary = _context.Bookings
-            .GroupBy(b => new { DateOnly = DateOnly.FromDateTime(b.Date), b.Room, b.Department }) // Converts DateTime to DateOnly
+        var bookings = _context.Bookings.AsQueryable();
+
+        if (year.HasValue)
+        {
+            bookings = bookings.Where(b => b.Date.Year == year.Value);
+        }
+
+        if (month.HasValue)
+        {
+            bookings = bookings.Where(b => b.Date.Month == month.Value);
+        }
+
+        var summary = bookings
+            .GroupBy(b => new { DateOnly = DateOnly.FromDateTime(b.Date), b.Room, b.Department })
             .Select(g => new { Date = g.Key.DateOnly, Room = g.Key.Room, Department = g.Key.Department, Count = g.Count() })
             .OrderBy(g => g.Date)
             .ToList();
 
         return Ok(summary);
     }
-
 }
