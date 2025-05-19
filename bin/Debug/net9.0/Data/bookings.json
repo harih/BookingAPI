@@ -1,0 +1,15 @@
+[
+    { "Id": 1, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-10 09:00", "EndDate": "2025-05-10 12:00" },
+    { "Id": 2, "Room": "Meeting Room A", "Department": "Finance", "Date": "2025-05-12 09:00", "EndDate": "2025-05-12 12:00" },
+    { "Id": 3, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-12 09:00", "EndDate": "2025-05-12 12:00" },
+    { "Id": 4, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-10 13:00","EndDate": "2025-05-12 15:00" },
+    { "Id": 5, "Room": "Meeting Room A", "Department": "IT", "Date": "2025-05-11 15:00", "EndDate": "2025-05-11 17:00" },
+    { "Id": 6, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-13 09:00", "EndDate": "2025-05-13 09:00" },
+    { "Id": 8, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-14 09:00", "EndDate": "2025-05-14 09:00" },
+    { "Id": 9, "Room": "Meeting Room A", "Department": "Finance", "Date": "2025-05-15 09:00", "EndDate": "2025-05-15 09:00" },
+    { "Id": 10, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-15 09:00", "EndDate": "2025-05-15 09:00" }, 
+    { "Id": 11, "Room": "Conference Room", "Department": "GA", "Date": "2025-05-14 09:00", "EndDate": "2025-05-14 09:00" },
+    { "Id": 12, "Room": "Meeting Room B", "Department": "Finance", "Date": "2025-05-15 13:00", "EndDate": "2025-05-15 15:00" },
+    { "Id": 13, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-26 09:00", "EndDate": "2025-05-16 12:00" }, 
+    { "Id": 14, "Room": "Conference Room", "Department": "HR", "Date": "2025-05-27 09:00", "EndDate": "2025-05-27 16:00" }
+]

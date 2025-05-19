@@ -1,0 +1,6 @@
+[
+    { "Id": "CR", "Name": "Conference Room", "Size": "Large", "Capacity": 40 },
+    { "Id": "RA", "Name": "Meeting Room A", "Size": "Medium", "Capacity": 15 },
+    { "Id": "RB", "Name": "Meeting Room B", "Size": "Small", "Capacity": 5 },
+    { "Id": "RC", "Name": "Meeting Room C", "Size": "Small", "Capacity": 5 }
+]
